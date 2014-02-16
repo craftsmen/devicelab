@@ -13,6 +13,7 @@ map '/assets' do
   environment.append_path 'assets/js'
   environment.append_path 'assets/scss'
   environment.append_path 'assets/img'
+  environment.append_path 'assets/fonts'
   environment.append_path "#{foundation_path}/vendor/assets/javascripts"
   environment.append_path "#{foundation_path}/vendor/assets/stylesheets"
   run environment

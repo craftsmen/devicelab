@@ -1,2 +1,47 @@
 @import 'normalize';
-@import 'foundation';
+@import 'foundation_and_overrides';
+@import 'foundation/functions';
+@import 'icons';
+
+body > section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  > .row {
+    margin-bottom: rem-calc(40);
+  }
+}
+
+#masthead {
+  height: 480px;
+  background: #56646C; //36576C, 6F8C9F
+  h1, h5, p {
+    color: #fff;
+  }
+
+  header h5 > span {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    padding-top: rem-calc(80);
+  }
+}
+
+#devices {
+  table {
+    width: 100%;
+  }
+
+  [class^="odl-"] {
+    vertical-align: middle;
+    font-size: rem-calc(32);
+    color: #aaa;
+  }
+}
+
+body > footer {
+  text-align: center;
+  font-size: rem-calc(14);
+  padding-bottom: 1em;
+  color: #999;
+}

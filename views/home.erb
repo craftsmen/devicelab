@@ -1,84 +1,92 @@
-<div class="row">
-  <div class="small-12 columns">
-    <h1>Open Device Lab Saint-Etienne</h1>
-    <h2>We believe testing designs on a range of platforms improves the quality of our products, so we’ve set up a test lab in our office, which is <strong>freely available to the local community.</strong></h2>
+<section id="masthead">
+  <div class="row">
+    <div class="small-12 columns">
+      <header>
+        <h5><span>Open Device Lab</span> Saint-Etienne</h5>
+      </header>
+      <h1>We believe testing designs on a range of platforms improves the quality of our products, so we’ve set up a test lab in our office, which is <strong>freely available to the local community.</strong></h1>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="row">
-  <div class="small-12 large-4 columns">
-    <h4>Open Device Labs</h4>
-    <p>The range of Smartphones and Tablets increases every day, and often it is not easy for web developers to test on all relevant devices. Open Device Labs provide a solution to this problem: Donated and rented devices are collected and made available, for free and for everyone.</p>
-  </div>
+<section id="content">
+  <div class="row">
+    <div class="small-12 large-4 columns">
+      <h3>Open Device Labs</h3>
+      <p>The range of Smartphones and Tablets increases every day, and often it is not easy for web developers to test on all relevant devices. Open Device Labs provide a solution to this problem: Donated and rented devices are collected and made available, for free and for everyone.</p>
+    </div>
 
-  <div class="small-12 large-4 columns">
-    <h4>ODL Saint-Etienne</h4>
-    <p>The Open Device Lab Saint-Etienne is provided by the software agency Craftsmen. Have a look at our devices and feel free to contact us if you have questions or feedback!</p>
-  </div>
+    <div class="small-12 large-4 columns">
+      <h3>ODL Saint-Etienne</h3>
+      <p>The Open Device Lab Saint-Etienne is provided by the software agency Craftsmen. Have a look at our devices and feel free to contact us if you have questions or feedback!</p>
+    </div>
 
-  <div class="small-12 large-4 columns">
-    <h4>Contribute</h4>
-    <p>Want to help us building the Open Device Lab? Awesome! We are grateful for every device and in turn will post a backlink for you. :)</p>
-    <a href="mailto:mehdi@craftsmen.io" class="button">Donate a device</a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="small-12 large-12 columns">
-    <h4>Our Devices</h4>
-    <p>Here is a complete list of the devices we currently have at Craftsmen HQ. If you’ve got some ancient device lurking at the bottom of a drawer gathering dust then please feel free to lend it to our collection.</p>
-    <p>If you would like to try any of these devices, or do some of your own testing, then pop ’round. But please note that these devices are for testing websites; you can’t install native apps.</p>
+    <div class="small-12 large-4 columns">
+      <h3>Contribute</h3>
+      <p>Want to help us building the Open Device Lab? Awesome! We are grateful for every device and in turn will post a backlink for you. :)</p>
+      <a href="mailto:mehdi@craftsmen.io" class="button">Donate a device</a>
+    </div>
   </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Manufacturer</th>
-        <th>Model</th>
-        <th>Screen Size</th>
-        <th>OS/Version</th>
-        <th>Contributor</th>
-      </tr>
-    </thead>
+  <div id="devices" class="row">
+    <div class="small-12 large-12 columns">
+      <h3>Our Devices</h3>
+      <p>Here is a complete list of the devices we currently have at Craftsmen HQ. If you’ve got some ancient device lurking at the bottom of a drawer gathering dust then please feel free to lend it to our collection.</p>
+      <p>If you would like to try any of these devices, or do some of your own testing, then pop ’round. But please note that these devices are for testing websites; you can’t install native apps.</p>
 
-    <%
-        devices = []
-        devices.push({manufacturer: 'Apple'     , model: 'iPhone 4S'        , screen_size: '960x640 @ 326ppi', os_version: 'iOS 7'           , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Apple'     , model: 'iPad mini Retina' , screen_size: '2048x1536 @ 326ppi', os_version: 'iOS 7'           , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'LG'        , model: 'Nexus 4'          , screen_size: '768x1280 @ 318ppi', os_version: 'Android'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Asus'      , model: 'Nexus 7'          , screen_size: '1280×800px @ 216ppi', os_version: 'Android'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Archos'    , model: 'Titanium'         , screen_size: '', os_version: 'Android'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Microsoft' , model: 'Surface'          , screen_size: '', os_version: 'Windows'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Nokia'     , model: 'Lumia 925'        , screen_size: '1280x768 @ 334ppi', os_version: 'Windows Phone 8' , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Nokia'     , model: 'Lumia 520'        , screen_size: '480x800 @ 233ppi', os_version: 'Windows Phone 8' , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Samsung'   , model: 'Galaxy Tab 3'     , screen_size: '1024x600', os_version: 'Android'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Samsung'   , model: 'Galaxy Tab 2'     , screen_size: '', os_version: 'Android'         , contributor: 'Craftsmen'})
-        devices.push({manufacturer: 'Amazon'    , model: 'Kindle Fire HD'   , screen_size: '1280×800 @ 216ppi', os_version: 'Android'         , contributor: 'Craftsmen'})
-    %>
+      <table>
+        <thead>
+          <tr>
+            <th>Manufacturer</th>
+            <th>Model</th>
+            <th>Screen Size</th>
+            <th>OS/Version</th>
+            <th>Contributor</th>
+          </tr>
+        </thead>
 
-    <tbody>
-      <% devices.each do |device| %>
-      <tr>
-        <td><%= device[:manufacturer] %></td>
-        <td><%= device[:model] %></td>
-        <td><%= device[:screen_size] %></td>
-        <td><%= device[:os_version] %></td>
-        <td><%= device[:contributor] %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+        <%
+            devices = []
+            devices.push({manufacturer: 'Apple'     , type: 'phone'  , model: 'iPhone 4S'        , screen_size: '960x640 @ 326ppi'    , os_icon: 'ios'     , os_version: 'iOS 7'           , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Apple'     , type: 'tablet' , model: 'iPad mini Retina' , screen_size: '2048x1536 @ 326ppi'  , os_icon: 'ios'     , os_version: 'iOS 7'           , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Apple'     , type: 'tablet' , model: 'iPad 2'           , screen_size: '1024x768 @ 132ppi'   , os_icon: 'ios'     , os_version: 'iOS 7'           , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'LG'        , type: 'phone'  , model: 'Nexus 4'          , screen_size: '768x1280 @ 318ppi'   , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Asus'      , type: 'tablet' , model: 'Nexus 7'          , screen_size: '1280×800px @ 216ppi' , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Archos'    , type: 'tablet' , model: 'Titanium'         , screen_size: ''                    , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Microsoft' , type: 'tablet' , model: 'Surface'          , screen_size: ''                    , os_icon: 'windows' , os_version: 'Windows'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Nokia'     , type: 'phone'  , model: 'Lumia 925'        , screen_size: '1280x768 @ 334ppi'   , os_icon: 'windows' , os_version: 'Windows Phone 8' , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Nokia'     , type: 'phone'  , model: 'Lumia 520'        , screen_size: '480x800 @ 233ppi'    , os_icon: 'windows' , os_version: 'Windows Phone 8' , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Samsung'   , type: 'tablet' , model: 'Galaxy Tab 3'     , screen_size: '1024x600'            , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Samsung'   , type: 'tablet' , model: 'Galaxy Tab 2'     , screen_size: ''                    , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+            devices.push({manufacturer: 'Amazon'    , type: 'tablet' , model: 'Kindle Fire HD'   , screen_size: '1280×800 @ 216ppi'   , os_icon: 'android' , os_version: 'Android'         , contributor: 'Craftsmen'})
+        %>
 
-<div class="row">
-  <div class="small-12 columns">
-    <h4>Visit Us!</h4>
-    <p>The Open Device lab Saint-Etienne is located at the office of Craftsmen, 20 rue Benoît Lauras. You are welcome to visit us any time, just give us a short message in advance.</p>
-    <iframe width='100%' height='500px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mehlah.h80kmc78/mm/zoompan,zoomwheel.html'></iframe>
+        <tbody>
+          <% devices.each do |device| %>
+          <tr>
+            <td><%= device[:manufacturer] %></td>
+            <td><i class="odl-<%= device[:type] %>"></i> <%= device[:model] %></td>
+            <td><%= device[:screen_size] %></td>
+            <td><i class="odl-<%= device[:os_icon] %>"></i>  <%= device[:os_version] %></td>
+            <td><%= device[:contributor] %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
 
-<footer class="text-center">
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Visit Us!</h3>
+      <p>The Open Device lab Saint-Etienne is located at the office of Craftsmen, 20 rue Benoît Lauras. You are welcome to visit us any time, just give us a short message in advance.</p>
+      <iframe width='100%' height='500px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mehlah.h80kmc78/mm/zoompan.html'></iframe>
+    </div>
+  </div>
+</section>
+
+
+<footer>
   Shaped by the fine ladies and gentlemen at <a href="http://craftsmen.io">Craftsmen</a>
   <br />
 	Need to get in touch? <a href="mailto:mehdi@craftsmen.io">Email us!.</a>
