@@ -1,29 +1,52 @@
 @import 'normalize';
-@import 'foundation_and_overrides';
 @import 'foundation/functions';
+@import 'foundation_and_overrides';
 @import 'icons';
 
 body > section {
   padding-top: 1em;
   padding-bottom: 1em;
-  > .row {
-    margin-bottom: rem-calc(40);
+}
+
+#masthead, #intro {
+  background: #56646C; //36576C, 6F8C9F
+  h1, h3, h4, h5, p {
+    color: #fff;
+  }
+
+  p {
+    font-size: rem-calc(18);
+    font-weight: 300;
+  }
+
+  abbr {
+    font-size: 100%;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600 !important;
   }
 }
 
 #masthead {
-  height: 480px;
-  background: #56646C; //36576C, 6F8C9F
-  h1, h5, p {
-    color: #fff;
-  }
-
-  header h5 > span {
-    text-transform: uppercase;
+  header h4 {
+    img {
+      height: 60px;
+    }
+    &> span {
+      text-transform: uppercase;
+      font-weight: 100;
+    }
   }
 
   h1 {
     padding-top: rem-calc(80);
+    padding-bottom: rem-calc(80);
+    font-weight: 100;
   }
 }
 
@@ -35,7 +58,7 @@ body > section {
   [class^="odl-"] {
     vertical-align: middle;
     font-size: rem-calc(32);
-    color: #aaa;
+    color: #bbb;
   }
 }
 
