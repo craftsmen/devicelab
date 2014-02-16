@@ -35,7 +35,7 @@ body > section {
 #masthead {
   header h4 {
     img {
-      height: 60px;
+      height: 40px;
     }
     &> span {
       text-transform: uppercase;
@@ -44,9 +44,22 @@ body > section {
   }
 
   h1 {
-    padding-top: rem-calc(80);
-    padding-bottom: rem-calc(80);
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(60);
     font-weight: 100;
+  }
+}
+
+@media #{$small} {
+  #masthead {
+    header h4 img {
+      height: 60px;
+    }
+
+    h1 {
+      padding-top: rem-calc(80);
+      padding-bottom: rem-calc(80);
+    }
   }
 }
 
@@ -59,12 +72,23 @@ body > section {
     vertical-align: middle;
     font-size: rem-calc(32);
     color: #bbb;
+    display: none;
+  }
+}
+
+@media #{$small} {
+  #devices table {
+    [class^="odl-"] {
+      display: inline;
+    }
   }
 }
 
 body > footer {
-  text-align: center;
-  font-size: rem-calc(14);
   padding-bottom: 1em;
-  color: #999;
+  p {
+    text-align: center;
+    margin-bottom: 0;
+    img { height: 20px }
+  }
 }

@@ -39,7 +39,7 @@
       <table>
         <thead>
           <tr>
-            <th>Manufacturer</th>
+            <th class="hide-for-small">Manufacturer</th>
             <th>Model</th>
             <th>Screen Size</th>
             <th>OS/Version</th>
@@ -66,7 +66,7 @@
         <tbody>
           <% devices.each do |device| %>
           <tr>
-            <td><%= device[:manufacturer] %></td>
+            <td class="hide-for-small"><%= device[:manufacturer] %></td>
             <td><i class="odl-<%= device[:type] %>"></i> <%= device[:model] %></td>
             <td><%= device[:screen_size] %></td>
             <td><i class="odl-<%= device[:os_icon] %>"></i>  <%= device[:os_version] %></td>
@@ -89,8 +89,12 @@
   <iframe width='100%' height='400px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mehlah.h80kmc78/mm/zoompan.html'></iframe>
 </section>
 
-<footer>
-  Shaped by the fine ladies and gentlemen at <a href="http://craftsmen.io">Craftsmen</a>
-  <br />
-	Need to get in touch? <a href="mailto:mehdi@craftsmen.io">Email us!.</a>
+<footer class="row">
+  <div class="small-12 columns">
+    <p>
+      Shaped by the fine ladies and gentlemen at <a href="http://craftsmen.io"><img src="/assets/craftsmen-logo.png" /></a>
+      <br />
+      Need to get in touch? <a href="mailto:mehdi@craftsmen.io">Email us!.</a>
+    </p>
+  </div>
 </footer>
