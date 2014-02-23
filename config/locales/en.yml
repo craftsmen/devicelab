@@ -1,0 +1,30 @@
+en:
+  hero: 'We believe testing designs on a range of platforms improves the quality of our products,
+    so we’ve set up a test lab in our office, which is <strong>freely available to the local community.</strong>'
+  odl:
+    header: 'Open Device Labs'
+    content: 'The range of Smartphones and Tablets increases every day, and often it is not easy for web developers to test on all relevant devices.
+      Open Device Labs provide a solution to this problem: Donated and rented devices are collected and made available, for free and for everyone.'
+  odl_ste:
+    header: '<abbr title="Open Device Lab">ODL</abbr> Saint-Etienne'
+    content: 'Saint-Etienne <abbr title="Open Device Lab">ODL</abbr> is provided by the software agency Craftsmen.
+      Have a look at our devices and feel free to contact us if you have questions or feedback!'
+  contribute:
+    header: 'Contribute'
+    content: 'Want to help us building the Open Device Lab? Awesome! We are grateful for every device and in turn will post a backlink for you. :)'
+    button: 'Donate a device'
+  devices:
+    header: 'Our Devices'
+    content: '<p>Here is a complete list of the devices we currently have at Craftsmen HQ.
+      If you’ve got some ancient device lurking at the bottom of a drawer gathering dust then please feel free to lend it to our collection.</p>
+      <p>If you would like to try any of these devices, or do some of your own testing, then pop ’round.
+      But please note that these devices are for testing websites; you can’t install native apps.</p>'
+    table:
+      manufacturer: 'Manufacturer'
+      model: 'Model'
+      screen: 'Screen size'
+      os: 'OS/Version'
+      contributor: 'Contributor'
+  contact:
+    header: 'Visit Us!'
+    content: 'The Open Device lab Saint-Etienne is located at the office of Craftsmen, 20 rue Benoît Lauras. You are welcome to visit us any time, just give us a short message in advance to brew some coffee.'
