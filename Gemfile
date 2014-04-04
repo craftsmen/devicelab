@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
+gem 'foundation-rails', '~> 5.1.0'
 gem 'sass'
+gem 'sinatra'
+gem 'sinatra-i18n'
 gem 'sprockets'
 gem 'sprockets-helpers'
-gem 'foundation-rails', '~> 5.1.0'
 
 group :development do
   gem 'shotgun'

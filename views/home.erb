@@ -2,9 +2,10 @@
   <div class="row">
     <div class="small-12 columns">
       <header>
-        <h4><img src="assets/odl-logo.svg" /> <span>Open Device Lab</span> Saint-Etienne</h4>
+        <h4 class="left"><img src="assets/odl-logo.svg" /> <span>Open Device Lab</span> Saint-Etienne</h4>
+        <nav id="i18n" class="right hide-for-small"><a href="/en">EN</a> | <a href="/fr">FR</a></nav>
       </header>
-      <h1 class="animated fadeInLeft">We believe testing designs on a range of platforms improves the quality of our products, so we’ve set up a test lab in our office, which is <strong>freely available to the local community.</strong></h1>
+      <h1 class="animated fadeInLeft"><%= t('hero') %></strong></h1>
     </div>
   </div>
 </section>
@@ -12,19 +13,19 @@
 <section id="intro">
   <div class="row">
     <div class="small-12 large-4 columns">
-      <h3>Open Device Labs</h3>
-      <p>The range of Smartphones and Tablets increases every day, and often it is not easy for web developers to test on all relevant devices. Open Device Labs provide a solution to this problem: Donated and rented devices are collected and made available, for free and for everyone.</p>
+      <h3><%= t('odl.header') %></h3>
+      <p><%= t('odl.content') %></p>
     </div>
 
     <div class="small-12 large-4 columns">
-      <h3><abbr title="Open Device Lab">ODL</abbr> Saint-Etienne</h3>
-      <p>Saint-Etienne <abbr title="Open Device Lab">ODL</abbr> is provided by the software agency Craftsmen. Have a look at our devices and feel free to contact us if you have questions or feedback!</p>
+      <h3><%= t('odl_ste.header') %></h3>
+      <p><%= t('odl_ste.content') %></p>
     </div>
 
     <div class="small-12 large-4 columns">
-      <h3>Contribute</h3>
-      <p>Want to help us building the Open Device Lab? Awesome! We are grateful for every device and in turn will post a backlink for you. :)</p>
-      <a href="mailto:mehdi@craftsmen.io" class="button">Donate a device</a>
+      <h3><%= t('contribute.header') %></h3>
+      <p><%= t('contribute.content') %></p>
+      <a href="mailto:mehdi@craftsmen.io" class="button"><%= t('contribute.button') %></a>
     </div>
   </div>
 </section>
@@ -32,18 +33,16 @@
 <section id="devices">
   <div class="row">
     <div class="small-12 large-12 columns">
-      <h3>Our Devices</h3>
-      <p>Here is a complete list of the devices we currently have at Craftsmen HQ. If you’ve got some ancient device lurking at the bottom of a drawer gathering dust then please feel free to lend it to our collection.</p>
-      <p>If you would like to try any of these devices, or do some of your own testing, then pop ’round. But please note that these devices are for testing websites; you can’t install native apps.</p>
-
+      <h3><%= t('devices.header') %></h3>
+      <%= t('devices.content') %>
       <table>
         <thead>
           <tr>
-            <th class="hide-for-small">Manufacturer</th>
-            <th>Model</th>
-            <th>Screen Size</th>
-            <th>OS/Version</th>
-            <th>Contributor</th>
+            <th class="hide-for-small"><%= t('devices.table.manufacturer') %></th>
+            <th><%= t('devices.table.model') %></th>
+            <th><%= t('devices.table.screen') %></th>
+            <th><%= t('devices.table.os') %></th>
+            <th><%= t('devices.table.contributor') %></th>
           </tr>
         </thead>
 
@@ -82,8 +81,8 @@
 <section id="contact">
   <div class="row">
     <div class="small-12 columns">
-      <h3>Visit Us!</h3>
-      <p>The Open Device lab Saint-Etienne is located at the office of Craftsmen, 20 rue Benoît Lauras. You are welcome to visit us any time, just give us a short message in advance.</p>
+      <h3><%= t('contact.header') %></h3>
+      <p><%= t('contact.content') %></p>
     </div>
   </div>
   <iframe width='100%' height='400px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mehlah.h80kmc78/mm/zoompan.html'></iframe>

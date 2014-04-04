@@ -51,6 +51,20 @@ body > section {
   }
 }
 
+#masthead {
+  header {
+    @include clearfix;
+  }
+  #i18n {
+    color: #fff;
+    height: 60px;
+    padding-top: 25px;
+    a {
+      color: #fff;
+    }
+  }
+}
+
 @media #{$small} {
   #masthead {
     header h4 img {
