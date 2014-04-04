@@ -1,8 +1,8 @@
 fr:
-  hero: 'Nous sommes convaincus que tester nos designs sur une variété de plateformes améliore la qualité de nos produits. Nous avons donc construit un banc de test dans nos locaux, que est <strong>gratuitement disponible pour la communuaté locale.</strong>'
+  hero: 'Nous sommes convaincus que tester nos designs sur une variété de plateformes améliore la qualité de nos produits. Nous avons donc construit un banc de test dans nos locaux, qui est <strong>gratuitement disponible pour la communuaté locale.</strong>'
   odl:
     header: 'Open Device Labs'
-    content: "Le nombre de smartphones et tablettes augumente chaque jour, et il n'est souvent pas possible pour un designer ou développeur de tester sur tous les dispositifs concernés. Les Open Device Labs sont une solution à ce problème : Les appareils donnés sont recceuillis et mis à disposition gratuitement et pour tout le monde."
+    content: "Le nombre de smartphones et tablettes augumente chaque jour, et il n'est souvent pas possible pour un designer ou développeur de tester sur tous les dispositifs concernés. Les Open Device Labs sont une solution à ce problème : les appareils donnés sont reccueillis et mis à disposition gratuitement, pour tout le monde."
   odl_ste:
     header: '<abbr title="Open Device Lab">ODL</abbr> Saint-Etienne'
     content: "L'<abbr title=\"Open Device Lab\">ODL</abbr> Saint-Etienne a été construit par Craftsmen. Jetez un oeil à notre collection et n'hésitez pas à nous contacter pour des questions ou feedbacks !"
@@ -13,9 +13,9 @@ fr:
   devices:
     header: 'Nos appareils'
     content: "<p>Voici une liste complète des appareils que nous avons à Craftsmen.
-      Si vous avez un ancien appareil au fond d'un tirroir qui prend de la poussière, n'hésitez pas à l'ajouter à notre collection.</p>
+      Si vous avez un ancien appareil au fond d'un tiroir qui prend la poussière, n'hésitez pas à l'ajouter à notre collection.</p>
       <p>Si vous voulez tester un de ces appareils, alors pointez-vous !
-      Mais notez que ces appareils sont pour tester des pages web. Vous ne pourrez pas installer d'applications natives.</p>"
+      Mais notez qu'ils sont disponibles pour tester des pages web uniquement. Vous ne pourrez pas installer d'applications natives.</p>"
     table:
       manufacturer: 'Constructeur'
       model: 'Modèle'
@@ -24,4 +24,4 @@ fr:
       contributor: 'Contributeur'
   contact:
     header: 'Rendez-nous visite !'
-    content: "L'Open Device Lab est situé dans les locaux de Craftsmen, 20 rue Benoît Lauras. Vous êtes la bienvenue à n'importe quelle heure, envoyez nous juste un petit message à l'avance, pour qu'on prépare du café ;)"
+    content: "L'Open Device Lab est situé dans les locaux de Craftsmen, 20 rue Benoît Lauras. Vous êtes bienvenu(e)s à n'importe quelle heure, envoyez nous juste un petit message à l'avance, pour que nous préparions du café ;)"
