@@ -2,6 +2,10 @@ require 'sinatra'
 require 'sinatra/i18n'
 
 class App < Sinatra::Base
+  configure :production do
+    require 'newrelic_rpm'
+  end
+
   register Sinatra::I18n
 
   configure do
