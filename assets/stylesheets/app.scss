@@ -46,7 +46,7 @@ body > section {
 
   h1 {
     padding-top: rem-calc(60);
-    padding-bottom: rem-calc(60);
+    padding-bottom: rem-calc(30);
     font-weight: 100;
   }
 }
@@ -73,7 +73,7 @@ body > section {
 
     h1 {
       padding-top: rem-calc(80);
-      padding-bottom: rem-calc(80);
+      padding-bottom: rem-calc(40);
     }
   }
 }
@@ -100,10 +100,10 @@ body > section {
 }
 
 body > footer {
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   p {
     text-align: center;
     margin-bottom: 0;
-    img { height: 20px }
+    img { height: 18px; }
   }
 }
