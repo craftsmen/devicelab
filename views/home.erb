@@ -44,7 +44,7 @@
             <th><%= t('devices.table.model') %></th>
             <th><%= t('devices.table.screen') %></th>
             <th><%= t('devices.table.os') %></th>
-            <th><%= t('devices.table.contributor') %></th>
+            <th class="hide-for-small"><%= t('devices.table.contributor') %></th>
           </tr>
         </thead>
 
@@ -71,7 +71,7 @@
             <td><i class="odl-<%= device[:type] %>"></i> <%= device[:model] %></td>
             <td><%= device[:screen_size] %></td>
             <td><i class="odl-<%= device[:os_icon] %>"></i>  <%= device[:os_version] %></td>
-            <td><%= device[:contributor] %></td>
+            <td class="hide-for-small"><%= device[:contributor] %></td>
           </tr>
           <% end %>
         </tbody>
