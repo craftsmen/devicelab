@@ -9,8 +9,14 @@ body > section {
   padding-bottom: 1em;
 }
 
+.hero {
+  background: url(devicelab-bg.jpg) no-repeat center top #56646C;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #masthead, #intro {
-  background: #56646C; //36576C, 6F8C9F
+
   h1, h3, h4, h5, p {
     color: #fff;
   }
