@@ -3,8 +3,8 @@
     <div class="row">
       <div class="small-12 columns">
         <header>
-          <h4 class="left"><img src="assets/odl-logo.svg" /> <span>Open Device Lab</span> Saint-Etienne</h4>
-          <nav id="i18n" class="right hide-for-small"><a href="/en">EN</a> | <a href="/fr">FR</a></nav>
+          <h4 class="left"><%= image_tag 'odl-logo.svg' %> <span>Open Device Lab</span> Saint-Etienne</h4>
+          <nav id="i18n" class="right hide-for-small"><%= link_to 'EN', '/' %> | <%= link_to 'FR', '/fr' %></nav>
         </header>
         <h1 class="animated fadeInLeft"><%= t('hero') %></strong></h1>
       </div>
@@ -15,18 +15,21 @@
     <div class="row">
       <div class="small-12 large-4 columns">
         <h3><%= t('odl.header') %></h3>
+        <hr />
         <p><%= t('odl.content') %></p>
       </div>
 
       <div class="small-12 large-4 columns">
         <h3><%= t('odl_ste.header') %></h3>
+        <hr />
         <p><%= t('odl_ste.content') %></p>
       </div>
 
       <div class="small-12 large-4 columns">
         <h3><%= t('contribute.header') %></h3>
+        <hr />
         <p><%= t('contribute.content') %></p>
-        <a href="mailto:mehdi@craftsmen.io" class="button"><%= t('contribute.button') %></a>
+        <%= mail_to 'mehdi@craftsmen.io', t('contribute.button'), class: 'button' %>
       </div>
     </div>
   </section>
@@ -93,10 +96,10 @@
 <footer class="row">
   <div class="small-12 columns">
     <p>
-      Shaped by the fine ladies and gentlemen at <a href="http://craftsmen.io"><img src="/assets/craftsmen-logo.png" /></a>
+      Shaped by the fine ladies and gentlemen at <%= link_to image_tag('craftsmen-logo.png'), 'http://craftsmen.io' %>
       <br />
-      Need to get in touch? <a href="mailto:mehdi@craftsmen.io">Email us!.</a>
+      Need to get in touch? <%= mail_to 'mehdi@craftsmen.io', 'Email us!' %>
     </p>
-    <p><a href="https://twitter.com/ODLSaintEtienne"><img src="/assets/twitter.png" /></a></p>
+    <p><%= link_to image_tag('twitter.png'), 'https://twitter.com/ODLSaintEtienne' %></p>
   </div>
 </footer>

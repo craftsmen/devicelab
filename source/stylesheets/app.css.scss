@@ -1,22 +1,22 @@
-@import 'normalize';
-@import 'foundation/functions';
+@import 'normalize.scss';
 @import 'foundation_and_overrides';
+
 @import 'icons';
 @import 'animations';
 
 body > section {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: rem-calc(30 0);
 }
 
 .hero {
-  background: url(devicelab-bg.jpg) no-repeat center top #56646C;
+  padding-top: 1em;
+  padding-bottom: rem-calc(30) - $paragraph-margin-bottom;
+  background: image-url('devicelab-bg.jpg') no-repeat center top #56646C;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #masthead, #intro {
-
   h1, h3, h4, h5, p {
     color: #fff;
   }
@@ -36,6 +36,10 @@ body > section {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600 !important;
+  }
+
+  hr {
+    width: 70%;
   }
 }
 
