@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'craftsmen-odl';
-	src:url('craftsmen-odl.eot?-pmpg0r');
-	src:url('craftsmen-odl.eot?#iefix-pmpg0r') format('embedded-opentype'),
-		url('craftsmen-odl.woff?-pmpg0r') format('woff'),
-		url('craftsmen-odl.ttf?-pmpg0r') format('truetype'),
-		url('craftsmen-odl.svg?-pmpg0r#craftsmen-odl') format('svg');
+	src:font-url('craftsmen-odl.eot?-pmpg0r');
+	src:font-url('craftsmen-odl.eot?#iefix-pmpg0r') format('embedded-opentype'),
+		font-url('craftsmen-odl.woff?-pmpg0r') format('woff'),
+		font-url('craftsmen-odl.ttf?-pmpg0r') format('truetype'),
+		font-url('craftsmen-odl.svg?-pmpg0r#craftsmen-odl') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

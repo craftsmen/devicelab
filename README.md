@@ -1,3 +1,11 @@
-# Quickstart
+#Devicelab
 
-Run `bundle install` to install all dependencies. To run your server type in `bundle exec shotgun` and you can access your site at `http://localhost:9393`
+Devicelab static website
+
+## Getting started
+
+1. $ `bower install`
+2. $ `bundle install`
+3. $ `bundle exec middleman`
+
+Now you can start hacking on `source` directory and watch live changes on [localhost:4567](http://localhost:4567).

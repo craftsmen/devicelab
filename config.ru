@@ -1,21 +1,20 @@
-Bundler.setup
-require 'sprockets'
-require './app'
+require 'rack/contrib/try_static'
 
-map '/assets' do
-  foundation_path = Bundler.load.specs.select{|g| g.name == 'foundation-rails'}.first.full_gem_path
+use Rack::Deflater
+use Rack::TryStatic,
+  root: 'build',
+  urls: %w[/],
+  try: %w[.html index.html /index.html]
 
-  environment = Sprockets::Environment.new
-  environment.cache = Sprockets::Cache::FileStore.new('/tmp')
+FIVE_MINUTES=300
 
-  environment.append_path 'assets/javascripts'
-  environment.append_path 'assets/stylesheets'
-  environment.append_path 'assets/images'
-  environment.append_path 'assets/fonts'
-  environment.append_path "#{foundation_path}/vendor/assets/javascripts"
-  environment.append_path "#{foundation_path}/vendor/assets/stylesheets"
-  run environment
-end
-
-set :raise_errors, true
-run App
+run lambda { |env|
+  [
+    404,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => "public, max-age=#{FIVE_MINUTES}"
+    },
+    ['File not found']
+  ]
+}
