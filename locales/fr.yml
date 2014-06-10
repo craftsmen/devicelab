@@ -2,19 +2,19 @@ fr:
   hero: 'Nous sommes convaincus que tester nos designs sur une variété de plateformes améliore la qualité de nos produits. Nous avons donc construit un banc de test dans nos locaux, qui est <strong>gratuitement disponible pour la communuaté locale.</strong>'
   odl:
     header: 'Open Device Labs'
-    content: "Le nombre de smartphones et tablettes augumente chaque jour, et il n'est souvent pas possible pour un designer ou développeur de tester sur tous les dispositifs concernés. Les Open Device Labs sont une solution à ce problème : les appareils donnés sont reccueillis et mis à disposition gratuitement, pour tout le monde."
+    content: "Le nombre de smartphones et tablettes augumente chaque jour, et il n'est souvent pas possible pour un designer ou développeur de tester sur tous les terminaux concernés. Les Open Device Labs sont une solution à ce problème : les terminaux donnés sont reccueillis et mis à disposition gratuitement, pour tout le monde."
   odl_ste:
     header: '<abbr title="Open Device Lab">ODL</abbr> Saint-Etienne'
     content: "L'<abbr title=\"Open Device Lab\">ODL</abbr> Saint-Etienne a été construit par Craftsmen. Jetez un oeil à notre collection et n'hésitez pas à nous contacter pour des questions ou feedbacks !"
   contribute:
     header: 'Contribuer'
     content: 'Vous voulez nous aider à construire cet Open Device Lab ? Super ! Donnez une 2e vie à votre téléphone ou tablette en en faisant profiter la communauté.'
-    button: 'Donner un appareil'
+    button: 'Donner un device'
   devices:
-    header: 'Nos appareils'
-    content: "<p>Voici une liste complète des appareils que nous avons à Craftsmen.
+    header: 'Nos terminaux'
+    content: "<p>Voici une liste complète des terminaux que nous avons à Craftsmen.
       Si vous avez un ancien appareil au fond d'un tiroir qui prend la poussière, n'hésitez pas à l'ajouter à notre collection.</p>
-      <p>Si vous voulez tester un de ces appareils, alors pointez-vous !
+      <p>Si vous voulez tester un de ces terminaux, alors pointez-vous !
       Mais notez qu'ils sont disponibles pour tester des pages web uniquement. Vous ne pourrez pas installer d'applications natives.</p>"
     table:
       manufacturer: 'Constructeur'
