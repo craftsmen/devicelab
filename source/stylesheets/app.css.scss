@@ -13,7 +13,13 @@ body > section {
   padding-bottom: rem-calc(30) - $paragraph-margin-bottom;
   background: image-url('devicelab-bg.jpg') no-repeat center top #56646C;
   background-size: cover;
-  background-attachment: fixed;
+
+}
+
+@media #{$large-up} {
+  .hero {
+    background-attachment: fixed;
+  }
 }
 
 #masthead, #intro {
