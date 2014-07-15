@@ -1,0 +1,15 @@
+[
+  {"manufacturer" : "ZTE"       , "type" : "phone"  , "model" : "ZTE OPEN C"       , "screen_size" : "480x800 @ 233ppi"    , "os_icon" : "firefox-os" , "os_version" : "Firefox OS"      , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Samsung"   , "type" : "tablet" , "model" : "Galaxy Tab 2"     , "screen_size" : "600x1024 @170ppi"    , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Samsung"   , "type" : "tablet" , "model" : "Galaxy Tab 3"     , "screen_size" : "1024x600"            , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Apple"     , "type" : "tablet" , "model" : "iPad 2"           , "screen_size" : "1024x768 @ 132ppi"   , "os_icon" : "ios"     , "os_version"    : "iOS 7"           , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Apple"     , "type" : "tablet" , "model" : "iPad mini Retina" , "screen_size" : "2048x1536 @ 326ppi"  , "os_icon" : "ios"     , "os_version"    : "iOS 7"           , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Apple"     , "type" : "phone"  , "model" : "iPhone 4S"        , "screen_size" : "960x640 @ 326ppi"    , "os_icon" : "ios"     , "os_version"    : "iOS 7"           , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Amazon"    , "type" : "tablet" , "model" : "Kindle Fire HD"   , "screen_size" : "1280×800 @ 216ppi"   , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Nokia"     , "type" : "phone"  , "model" : "Lumia 925"        , "screen_size" : "1280x768 @ 334ppi"   , "os_icon" : "windows" , "os_version"    : "Windows Phone 8" , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Nokia"     , "type" : "phone"  , "model" : "Lumia 520"        , "screen_size" : "480x800 @ 233ppi"    , "os_icon" : "windows" , "os_version"    : "Windows Phone 8" , "contributor" : "Craftsmen"},
+  {"manufacturer" : "LG"        , "type" : "phone"  , "model" : "Nexus 4"          , "screen_size" : "768x1280 @ 318ppi"   , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Asus"      , "type" : "tablet" , "model" : "Nexus 7"          , "screen_size" : "1280×800 @ 216ppi"   , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Microsoft" , "type" : "tablet" , "model" : "Surface"          , "screen_size" : "1366x768 @ 148ppi"   , "os_icon" : "windows" , "os_version"    : "Windows"         , "contributor" : "Craftsmen"},
+  {"manufacturer" : "Archos"    , "type" : "tablet" , "model" : "Titanium"         , "screen_size" : "1280x800"            , "os_icon" : "android" , "os_version"    : "Android"         , "contributor" : "Craftsmen"}
+]
