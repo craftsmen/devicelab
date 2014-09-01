@@ -38,7 +38,7 @@ set :images_dir, 'images'
 set :fonts_dir,  'fonts'
 
 activate :livereload
-activate :i18n
+activate :i18n, mount_at_root: :fr
 
 ignore 'bower_components/*'
 
